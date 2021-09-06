@@ -27,7 +27,7 @@ int main() {
 			cnt++;
             
 			if (K == cnt) {
-				printf("%d %d \n", K/M, K%M); // 2차원 배열의 값에 따라서 N,M 값 알기
+				printf("%d %d \n", K/M, K%M); // 2차원 배열의 값에 따라서 N,M 값 결정
 				break;
 			}
 		}

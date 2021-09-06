@@ -21,7 +21,7 @@ int main() {
 	scanf("%s",hex_ary);
 
 	length = strlen(hex_ary);
-	power = length - 1; // 0 부터 시작을 함.
+	power = length - 1; // 우리가 구하고자 하는 값: 자릿수(0 부터 시작하는)
 
 	for (int i = 0; i < length; i++) {
 		switch (hex_ary[i]) {

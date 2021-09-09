@@ -1,11 +1,11 @@
 /*
-* 제출 번호:
-* 아이디:
+* 제출 번호: 33189454
+* 아이디: adviate
 * 문제: 21638
-* 메모리:
-* 시간:
+* 메모리: 2020KB
+* 시간: 0ms
 * 언어: C++17
-* 코드 길이:
+* 코드 길이: 1796B
 * 제출한 시간: 2021.09.10 
 */
 
@@ -18,45 +18,6 @@
 * The first line of input contains two integers t1 and v1 --- the temperature and the wind speed for today
 * The second line contains two integers t2 and v2 --- the temperature and the wind speed for tomorrow
 * (-50 <= t1,t2 <= 50,  0 <= v1,v2 <= 20$)
-*/
-
-/*
-#include <iostream>
-using namespace std;
-
-int main(void)
-{
-	ios_base::sync_with_stdio(0);
-	cin.tie(0);
-	int t1, v1, t2, v2;
-	cin >> t1 >> v1 >> t2 >> v2;
-
-	if (t2 < 0 && v2 >= 10)
-	{
-		cout << "A storm warning for tomorrow! Be careful and stay home if possible!\n";
-
-		return 0;
-	}
-
-	if (t2 < t1)
-	{
-		cout << "MCHS warns! Low temperature is expected tomorrow.\n";
-
-		return 0;
-	}
-
-	if (v1 < v2)
-	{
-		cout << "MCHS warns! Strong wind is expected tomorrow.\n";
-
-		return 0;
-	}
-
-	cout << "No message\n";
-
-	return 0;
-}
-뭐가 다른거지???
 */
 
 #include <iostream>

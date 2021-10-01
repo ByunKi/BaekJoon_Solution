@@ -27,5 +27,4 @@ N, M, K = map(int, input().split())
 
 # N = 7, M = 5, K = 2
 # M : N-M = K : N-K
-
 print(min((K+(N - M)), (M + (N - K))))

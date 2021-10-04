@@ -10,15 +10,19 @@
 제출한 시간: 2021.10.05 08:33:52
 
 
-* each person receives a quota of 60 liters per month in a fuel card.
-    Each liter of petrol costs 1500 Oshloobs if it is within quota.
-    Any extra fueling costs 3000 Oshloobs per liter.
+* Barley the dog loves treats.
+    At the end of the day he is either happy or sad depending on the number and size of treats he receives throughout the day. 
+    The treats come in three sizes: small, medium, and large. His happiness score can be measured using the following formula:
+    1 × S + 2 × M + 3 × L
+    where S is the number of small treats, M is the number of medium treats and L is the number of large treats.
     
-* The input consists of two lines.
-     The first line contains an integer n (0 ⩽ n ⩽ 200), specifying the amount of petrol that will be used in the next month.
-     The second line contains an integer k (0 ⩽ k ⩽ 360), showing the quota left in Mahya’s fuel card at the end of current month.
+* There are three lines of input.
+    Each line contains a non-negative integer less than 10.
+    The first line contains the number of small treats, S,
+    the second line contains the number of medium treats, M,
+    and the third line contains the number of large treats, L, that Barley receives in a day.
      
-* Print the amount of money (in Oshloobs) that Mahya will pay for petrol in the next month.
+*If Barley’s happiness score is 10 or greater, output happy. Otherwise, output sad.
 """
 
 S = int(input())

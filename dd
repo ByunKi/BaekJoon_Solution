@@ -1,0 +1,63 @@
+Select one operation  
+Insert(Front):0, Insert(Rear):1, Remove(Front):2, Remove(Rear):3, Move(Front):4, Move(Rear):5, Print List:6, Exit:7 >> 1
+Select one Shape 
+Rectangle:0, Circle:1, Line:2 >> 1
+Enter point coordinates (enter two integers) >> 10 20
+Enter the radius (enter one integer) >> 5
+Select one operation  
+Insert(Front):0, Insert(Rear):1, Remove(Front):2, Remove(Rear):3, Move(Front):4, Move(Rear):5, Print List:6, Exit:7 >> 6
+[Circle 5 (10, 20)]
+Select one operation  
+Insert(Front):0, Insert(Rear):1, Remove(Front):2, Remove(Rear):3, Move(Front):4, Move(Rear):5, Print List:6, Exit:7 >> 0
+Select one Shape 
+Rectangle:0, Circle:1, Line:2 >> 0
+Enter point coordinates (enter two integers) >> 10 20
+Enter point coordinates (enter two integers) >> 30 40
+Select one operation  
+Insert(Front):0, Insert(Rear):1, Remove(Front):2, Remove(Rear):3, Move(Front):4, Move(Rear):5, Print List:6, Exit:7 >> 6
+[Rectangle (10, 20) (30, 40)], [Circle 5 (10, 20)]
+Select one operation  
+Insert(Front):0, Insert(Rear):1, Remove(Front):2, Remove(Rear):3, Move(Front):4, Move(Rear):5, Print List:6, Exit:7 >> 1
+Select one Shape 
+Rectangle:0, Circle:1, Line:2 >> 2
+Enter point coordinates (enter two integers) >> 40 50
+Enter point coordinates (enter two integers) >> 40 70
+Select one operation  
+Insert(Front):0, Insert(Rear):1, Remove(Front):2, Remove(Rear):3, Move(Front):4, Move(Rear):5, Print List:6, Exit:7 >> 6
+[Rectangle (10, 20) (30, 40)], [Circle 5 (10, 20)], [Line (40, 50) (40, 70)]
+Select one operation  
+Insert(Front):0, Insert(Rear):1, Remove(Front):2, Remove(Rear):3, Move(Front):4, Move(Rear):5, Print List:6, Exit:7 >> 4
+Enter two integers to move along the X and Y axes (enter two integers) >> 5 10
+Select one operation  
+Insert(Front):0, Insert(Rear):1, Remove(Front):2, Remove(Rear):3, Move(Front):4, Move(Rear):5, Print List:6, Exit:7 >> 6
+[Rectangle (15, 30) (35, 50)], [Circle 5 (10, 20)], [Line (40, 50) (40, 70)]
+Select one operation  
+Insert(Front):0, Insert(Rear):1, Remove(Front):2, Remove(Rear):3, Move(Front):4, Move(Rear):5, Print List:6, Exit:7 >> 
+5
+Enter two integers to move along the X and Y axes (enter two integers) >> 3 7
+Select one operation  
+Insert(Front):0, Insert(Rear):1, Remove(Front):2, Remove(Rear):3, Move(Front):4, Move(Rear):5, Print List:6, Exit:7 >> 6
+[Rectangle (15, 30) (35, 50)], [Circle 5 (10, 20)], [Line (43, 57) (43, 77)]
+Select one operation  
+Insert(Front):0, Insert(Rear):1, Remove(Front):2, Remove(Rear):3, Move(Front):4, Move(Rear):5, Print List:6, Exit:7 >> 3
+Select one operation  
+Insert(Front):0, Insert(Rear):1, Remove(Front):2, Remove(Rear):3, Move(Front):4, Move(Rear):5, Print List:6, Exit:7 >> 6
+[Rectangle (15, 30) (35, 50)], [Circle 5 (10, 20)]
+Select one operation  
+Insert(Front):0, Insert(Rear):1, Remove(Front):2, Remove(Rear):3, Move(Front):4, Move(Rear):5, Print List:6, Exit:7 >> 4
+Enter two integers to move along the X and Y axes (enter two integers) >> 6 5
+Select one operation  
+Insert(Front):0, Insert(Rear):1, Remove(Front):2, Remove(Rear):3, Move(Front):4, Move(Rear):5, Print List:6, Exit:7 >> 6
+[Rectangle (21, 35) (41, 55)], [Circle 5 (10, 20)]
+Select one operation  
+Insert(Front):0, Insert(Rear):1, Remove(Front):2, Remove(Rear):3, Move(Front):4, Move(Rear):5, Print List:6, Exit:7 >> 2
+Select one operation  
+Insert(Front):0, Insert(Rear):1, Remove(Front):2, Remove(Rear):3, Move(Front):4, Move(Rear):5, Print List:6, Exit:7 >> 6
+[Circle 5 (10, 20)]
+Select one operation  
+Insert(Front):0, Insert(Rear):1, Remove(Front):2, Remove(Rear):3, Move(Front):4, Move(Rear):5, Print List:6, Exit:7 >> 2
+Select one operation  
+Insert(Front):0, Insert(Rear):1, Remove(Front):2, Remove(Rear):3, Move(Front):4, Move(Rear):5, Print List:6, Exit:7 >> 6
+Select one operation  
+Insert(Front):0, Insert(Rear):1, Remove(Front):2, Remove(Rear):3, Move(Front):4, Move(Rear):5, Print List:6, Exit:7 >> 7
+Good Bye

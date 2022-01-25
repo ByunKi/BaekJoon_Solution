@@ -1,30 +1,28 @@
 /*
- * 제출 번호: 
+ * 제출 번호: 38102881
  * ID: adviate
  * 문제: 15917
- * 결과: 
- * 메모리: 
- * 시간: 
+ * 결과: 맞았습니다!!
+ * 메모리: 73588 KB
+ * 시간: 520 ms
  * 언어: Java 11
- * 코드 길이: 670 B
+ * 코드 길이: 510 B
  */
 
-import java.util.*;
+import java.io.*;
 
 public class Main {
-	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
-		int testCases = scanner.nextInt();
+	public static void main(String[] args) throws IOException {
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		StringBuilder builder = new StringBuilder();
+		
+		int TC = Integer.parseInt(reader.readLine());
+		for(int i = 0; i < TC; i++) {
+			int num = Integer.parseInt(reader.readLine());
 			
-		for(int i = 0; i < testCases; i++) {
-			int num = scanner.nextInt();
-			
-			if((num & (-num)) == num) {
-				System.out.println(1);
-			} else {
-				System.out.println(0);
-			}
+			if((num&-num) == num) { builder.append(1).append("\n"); } 
+			else { builder.append(0).append("\n"); }
 		}
-		scanner.close();
-	}
+		System.out.println(builder);
+ 	}
 }

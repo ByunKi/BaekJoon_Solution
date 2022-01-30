@@ -17,9 +17,7 @@ public class Main {
 		
 		int TC = Integer.parseInt(reader.readLine());
 		for(int i = 0; i < TC; i++) {
-			String[] input = reader.readLine().split(" ");
-			int a = Integer.parseInt(input[0]), b = Integer.parseInt(input[1]);
-			
+			String input = reader.readLine();
 			System.out.println(1);
 		}
  	}

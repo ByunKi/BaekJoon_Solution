@@ -1,45 +1,35 @@
 /*
- * 제출 번호: 37237691
+ * 제출 번호: 42832616
  * ID: adviate
  * 문제: 2153
  * 결과: 맞았습니다!!
- * 메모리: 17576 KB
- * 시간: 196 ms
+ * 메모리: 14312 KB
+ * 시간: 128 ms
  * 언어: Java 11
- * 코드 길이: 703 B
+ * 코드 길이: 629 B
  */
 
-import java.util.*;
+import java.io.*;
 
 public class Main {
-	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
-		String input = scanner.next();
+	public static void main(String[] args) throws IOException {
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		
 		int sum = 0;
 		boolean flag = false;
-		
-		char[] inputAlpha = input.toCharArray();
-		for(int i = 0; i < inputAlpha.length; i++) {
-			if(Character.isUpperCase(inputAlpha[i])) {
-				sum += ((int)(inputAlpha[i] - 'A') + 1);
-			} else {
-				sum += ((int)(inputAlpha[i] - 'a') + 1);
-			}
+		String input = reader.readLine();
+		for(int i = 0; i < input.length(); i++) {
+			if(Character.isUpperCase(input.charAt(i))) { sum += (input.charAt(i) - 'A' + 27); }
+			else { sum += (input.charAt(i) - 'a' + 1); }
 		}
-		
-		for(int i = 2; i <= sum / 2; ++i) {
+
+		for(int i = 2; i <= (sum / 2); i++) {
 			if(sum % i == 0) {
 				flag = true;
 				break;
 			}
 		}
 		
-		if(!flag) {
-			System.out.println("It is a prime word.");
-		} else {
-			System.out.println("It is not a prime word.");
-		}
-		
-		scanner.close();
+		System.out.println(!flag ? "It is a prime word." : "It is not a prime word.");
 	}
 }

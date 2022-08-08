@@ -24,3 +24,23 @@ for i in A:
         break
 
 print('No' if flag else 'Yes')
+
+
+#수정 후
+'''
+from sys import stdin
+def input(): return stdin.readline().rstrip()
+
+_ = int(input())
+M, *A = map(int, input().split())
+
+A.sort()
+for i in A:
+    if M > i:
+        M += i
+    else:
+        M = -1
+        break
+
+print('No' if M < 0 else 'Yes')
+'''

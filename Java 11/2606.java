@@ -60,3 +60,57 @@ public class Main {
 		reader.close();
 	}
 }
+
+/*
+ * 제출 번호: 51842198
+ * ID: adviate
+ * 문제: 2606
+ * 결과: 맞았습니다!!
+ * 메모리: 14280 KB
+ * 시간: 124 ms
+ * 언어: Java 11
+ * 코드 길이: 1118 B
+ */
+
+import java.io.*;
+import java.util.*;
+
+public class Main {
+	static int cnt = 0;
+	
+	public static void DFS(int v, ArrayList<ArrayList<Integer>> g, boolean[] visited) {
+		visited[v] = true;
+		cnt++;
+		
+		Iterator<Integer> it = g.get(v).listIterator();
+		while(it.hasNext()) {
+			int n = it.next();
+			if (!visited[n]) { DFS(n, g, visited); }
+		}
+	}
+	
+
+	public static void main(String[] args) throws IOException {
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(System.out));
+		ArrayList<ArrayList<Integer>> g = new ArrayList<>();
+		
+		int N = Integer.valueOf(reader.readLine()), E = Integer.valueOf(reader.readLine());
+		boolean[] visited = new boolean[N+1];
+		for (int i = 0; i <= N+1; i++) { g.add(new ArrayList<>()); }
+		
+		for(int i = 0; i < E; i++) {
+			String[] input = reader.readLine().split(" ");
+			int a = Integer.valueOf(input[0]), b = Integer.valueOf(input[1]);
+			
+			g.get(a).add(b);
+			g.get(b).add(a);
+		}
+		
+		DFS(1, g, visited);
+		System.out.println(cnt-1);
+		
+		writer.close();
+		reader.close();
+	}
+}
